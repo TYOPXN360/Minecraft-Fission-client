@@ -21,3 +21,6 @@
 ## 请务必使用OpenJ9来获得更高的帧数和更好的游戏体验！
 * 具体请参考[我](https://www.mcbbs.net/thread-847020-1-1.html)
 * 以及[我！](https://www.mcbbs.net/thread-899289-1-1.html)
+* 下载地址会附上OpenJ9的文件，大家按需下载
+### 屏幕截图
+![效果演示](https://s2.loli.net/2022/01/27/K5GIzNd1ThuiCsR.png)
