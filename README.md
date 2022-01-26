@@ -25,3 +25,4 @@
 ### 屏幕截图
 ![效果演示](https://s2.loli.net/2022/01/27/K5GIzNd1ThuiCsR.png)
 ![效果演示](https://s2.loli.net/2022/01/27/XiZEs2Ut5QYWDnM.png)
+* 实测200FPS+
