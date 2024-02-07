@@ -1,36 +1,36 @@
-
-[W][2024-02-06T06:13:45+0800][33578] logParams():267 Process will be UID/EUID=0 in the global user namespace, and will have user root-level access to files
-[W][2024-02-06T06:13:45+0800][33578] logParams():277 Process will be GID/EGID=0 in the global user namespace, and will have group root-level access to files
-[100% 1/1] analyzing Android.bp files and generating ninja file at out/soong/build.ninja
+[ 98% 401/407] analyzing Android.bp files and generating ninja file at out/soong/build.ninja
 FAILED: out/soong/build.ninja
 cd "$(dirname "out/host/linux-x86/bin/soong_build")" && BUILDER="$PWD/$(basename "out/host/linux-x86/bin/soong_build")" && cd / && env -i  "$BUILDER"     --top "$TOP"     --soong_out "out/soong"     --out "out"     -o out/soong/build.ninja --globListDir build --globFile out/soong/globs-build.ninja -t -l out/.module_paths/Android.bp.list --available_env out/soong/soong.environment.available --used_env out/soong/soong.environment.used.build Android.bp
-error: packages/apps/StorageManager/Android.bp:19:1: "StorageManager" depends on undefined module "SettingsLibDefaults".
-Or did you mean ["TvSettingsRoboTests"]?
-error: packages/modules/Connectivity/nearby/halfsheet/Android.bp:19:1: "HalfSheetUX" depends on undefined module "platform_app_defaults".
-Or did you mean ["libPlatformProperties" "libplatformprotos-test" "performanced_defaults"]?
-error: packages/modules/AdServices/sdksandbox/tests/cts/hostside/Android.bp:101:1: "SdkSandboxStorageTestProvider" depends on undefined module "platform_app_defaults".
-Or did you mean ["libPlatformProperties" "libplatformprotos-test" "performanced_defaults"]?
-error: packages/resources/devicesettings/Android.bp:17:1: "org.lineageos.settings.resources" depends on undefined module "SettingsLibDefaults".
-Or did you mean ["TvSettingsRoboTests"]?
-error: packages/modules/AdServices/sdksandbox/tests/cts/hostside/Android.bp:78:1: "SdkSandboxDataIsolationTestProvider" depends on undefined module "platform_app_defaults".
-Or did you mean ["libPlatformProperties" "libplatformprotos-test" "performanced_defaults"]?
-error: packages/apps/Updater/app/Android.bp:7:1: "Updater" depends on undefined module "SettingsLibDefaults".
-Or did you mean ["TvSettingsRoboTests"]?
-error: packages/modules/AdServices/adservices/apk/tests/settings/consenttestapp/Android.bp:19:1: "com.example.adservices.samples.ui.consenttestapp" depends on undefined module "platform_app_defaults".
-Or did you mean ["libPlatformProperties" "libplatformprotos-test" "performanced_defaults"]?
-error: vendor/pixel-framework/SystemUIGoogle/Android.bp:45:1: "SystemUIGoogle" depends on undefined module "platform_app_defaults".
-Or did you mean ["libPlatformProperties" "libplatformprotos-test" "performanced_defaults"]?
-error: packages/modules/HealthFitness/backuprestore/Android.bp:44:1: "HealthConnectBackupRestore" depends on undefined module "platform_app_defaults".
-Or did you mean ["libPlatformProperties" "libplatformprotos-test" "performanced_defaults"]?
-error: packages/modules/AdServices/adservices/samples/topics/sampleapp3/Android.bp:19:1: "SampleTopicsApp3" depends on undefined module "platform_app_defaults".
-Or did you mean ["libPlatformProperties" "libplatformprotos-test" "performanced_defaults"]?
-error: packages/modules/AdServices/sdksandbox/tests/cts/endtoendtests/providers/CtsProvider/Android.bp:19:1: "SdkSandboxManagerCtsProvider" depends on undefined module "platform_app_defaults".
-Or did you mean ["libPlatformProperties" "libplatformprotos-test" "performanced_defaults"]?
-error: packages/modules/AdServices/adservices/samples/topics/sampleappwithnoperm/Android.bp:19:1: "SampleTopicsAppWithNoPerm" depends on undefined module "platform_app_defaults".
-Or did you mean ["libPlatformProperties" "libplatformprotos-test" "performanced_defaults"]?
-error: packages/apps/Traceur/Android.bp:5:1: "Traceur" depends on undefined module "SettingsLibDefaults".
-Or did you mean ["TvSettingsRoboTests"]?
-06:13:47 soong bootstrap failed with: exit status 1
-ninja: build stopped: subcommand failed.
+error: hardware/qcom-caf/common/Android.bp:6:1: module "hidl_dpm_api_interface" already defined
+       hardware/xiaomi/Android.bp:6:1 <-- previous definition here
+error: hardware/qcom-caf/common/Android.bp:13:1: module "hidl_qconfig_interface" already defined
+       hardware/xiaomi/Android.bp:13:1 <-- previous definition here
+error: hardware/qcom-caf/common/Android.bp:20:1: module "hidl_alarm_interface" already defined
+       hardware/xiaomi/Android.bp:20:1 <-- previous definition here
+error: prebuilts/module_sdk/art/current/sdk/Android.bp:15:1: module "prebuilt_art-bootclasspath-fragment": source path "frameworks/base/boot/boot-image-profile.txt" does not exist
+error: prebuilts/module_sdk/art/current/sdk/Android.bp:15:1: module "prebuilt_art-bootclasspath-fragment": source path "frameworks/base/config/boot-image-profile.txt" does not exist
+error: hardware/qcom-caf/common/Android.bp:27:1: module "hidl_dsp_interface" already defined
+       hardware/xiaomi/Android.bp:27:1 <-- previous definition here
+error: hardware/qcom-caf/common/Android.bp:34:1: module "hidl_embmssl_interface" already defined
+       hardware/xiaomi/Android.bp:34:1 <-- previous definition here
+error: hardware/qcom-caf/common/Android.bp:42:1: module "hidl_factory_interface" already defined
+       hardware/xiaomi/Android.bp:42:1 <-- previous definition here
+error: hardware/qcom-caf/common/Android.bp:50:1: module "hidl_vpp_interface" already defined
+       hardware/xiaomi/Android.bp:50:1 <-- previous definition here
+error: hardware/qcom-caf/common/Android.bp:61:1: module "hidl_netperftuner_interface" already defined
+       hardware/xiaomi/Android.bp:61:1 <-- previous definition here
+error: hardware/qcom-caf/common/fwk-detect/Android.bp:1:1: module "libqti_vndfwk_detect" already defined
+       hardware/xiaomi/fwk-detect/Android.bp:1:1 <-- previous definition here
+error: hardware/qcom-caf/common/nqnfcinfo/Android.bp:1:1: module "nqnfcinfo" already defined
+       hardware/xiaomi/nqnfcinfo/Android.bp:1:1 <-- previous definition here
+error: hardware/qcom-caf/common/memtrack/Android.bp:1:1: module "vendor.qti.hardware.memtrack-service" already defined
+       hardware/xiaomi/memtrack/Android.bp:1:1 <-- previous definition here
+error: hardware/qcom-caf/common/fwk-detect/Android.bp:16:1: module "libvndfwk_detect_jni.qti" already defined
+       hardware/xiaomi/fwk-detect/Android.bp:16:1 <-- previous definition here
+error: hardware/qcom-caf/common/fwk-detect/Android.bp:37:1: module "vndfwk.detect" already defined
+       hardware/xiaomi/fwk-detect/Android.bp:37:1 <-- previous definition here
+error: art/build/boot/Android.bp:25:1: module "art-bootclasspath-fragment": source path "frameworks/base/boot/boot-image-profile.txt" does not exist
+error: art/build/boot/Android.bp:25:1: module "art-bootclasspath-fragment": source path "frameworks/base/config/boot-image-profile.txt" does not exist
+14:10:07 soong bootstrap failed with: exit status 1
 
-#### failed to build some targets (12 seconds) ####
+#### failed to build some targets (01:17 (mm:ss)) ####
